@@ -1,8 +1,20 @@
+<div class="indeximage">
+{{!-- <img src="/images/Volobehold.png" alt="" width="100%"> --}}
+</div>
 <div class="container">
-<h2>list of creatures</h2>
-{{#each creature}}
-<ul>
-<li><a href="/display/{{name}}"> {{name}}</a> </li> 
-</ul>
-{{/each}}
+    <div class="creatureselection">
+    <h2>Creature selection</h2>
+    <form action="/index/" method="POST">
+    <label> select a creature</label>
+        <select>
+            {{#each creature}}
+                <option value="{{name}}">{{name}}</option>
+            {{/each}}
+            <option selected="selected">None</option>
+        </select>
+    <br>
+    <br>
+     <input type="submit" value="Submit">  
+    </form>
+    </div>
 </div>
