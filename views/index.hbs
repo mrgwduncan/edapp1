@@ -4,11 +4,19 @@
 <div class="container">
     <div class="creatureselection">
     <h2>Creature selection</h2>
-    <form action="/index/" method="POST">
-    <label> select a creature</label>
-        <select>
+    <form action="/" method="POST">
+    <label> Select creature by name </label>
+        <select name='name'>
             {{#each creature}}
                 <option value="{{name}}">{{name}}</option>
+            {{/each}}
+            <option selected="selected">None</option>
+        </select>
+        &nbsp&nbsp&nbsp
+        <label> Select creature by type</label>
+        <select name='type'>
+            {{#each type}}
+                <option value="{{type}}">{{type}}</option>
             {{/each}}
             <option selected="selected">None</option>
         </select>

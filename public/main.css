@@ -29,18 +29,36 @@ h2{
     width: 90%;
     margin: 0 auto;
 }
+.close{
+    width: min-content;
+    margin: 0 auto;
+
+}
+.close > button{
+    background-color:#a10d1c;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    opacity: 0.9;
+}
 .creatureselection{
     width: 60%;
     background-color: ghostwhite;
     opacity: 0.6;
     padding: 20 20 20 20;
     margin: 0px auto;
+    border-radius: 15px 15px;
 }
 .displaycreature{
     display:flex;
     flex-direction: row;
     width: max-content;
     margin: 0 auto;
+    margin-bottom: 25px;
     background-color:#FFFFFF;
     border-style: ridge;
     border-radius: 15px 15px;
@@ -56,11 +74,6 @@ h2{
     height: 300px;
     width: 200px;
 }
-/* .displaycreature > img {
-    padding-bottom: 10px;
-    height: 300px;
-    width: 200px;
-} */
 .displaycreature > li {
     font-family: Arial, Helvetica, sans-serif;
     list-style-type: none;
